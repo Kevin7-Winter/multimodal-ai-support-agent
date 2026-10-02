@@ -1,0 +1,285 @@
+[
+  {
+    "entry_id": "ANKER-OFFICIAL-001",
+    "category": "故障排除",
+    "product_category": "充电宝",
+    "product_models": ["PowerCore通用"],
+    "title": "充电宝无法重新充电",
+    "content": "如果充电宝无法重新充电，可以依次尝试更换墙充、充电线和墙上插座。如果使用USB-C接口无法充电，应更换已确认正常的USB-C线和充电器，并尝试其他插座。完成上述排查后仍然无法充电，应联系Anker官方支持，并说明已经尝试过的步骤。",
+    "keywords": [
+      "充不进电",
+      "无法充电",
+      "无法重新充电",
+      "充电器",
+      "充电线",
+      "插座"
+    ],
+    "risk_level": "medium",
+    "next_action": "更换充电器、充电线和插座进行交叉测试",
+    "source_type": "official",
+    "source_url": "https://service.anker.com/eu/article-description/Common-issues-and-troubleshooting-for-PowerCore-Common-Battery",
+    "last_verified": "2026-09-22"
+  },
+  {
+    "entry_id": "ANKER-OFFICIAL-002",
+    "category": "故障排除",
+    "product_category": "充电宝",
+    "product_models": ["PowerCore通用"],
+    "title": "充电宝无法给其他设备充电",
+    "content": "如果充电宝无法给手机或其他设备充电，可以先更换一根已经确认正常的充电线，再尝试连接其他手机或设备。如果更换设备和充电线后仍然无法输出，应联系Anker官方支持并提供已经完成的排查步骤。",
+    "keywords": [
+      "不能给手机充电",
+      "手机充不上",
+      "无法输出",
+      "没有输出",
+      "充电线"
+    ],
+    "risk_level": "medium",
+    "next_action": "更换正常充电线并连接另一台设备测试",
+    "source_type": "official",
+    "source_url": "https://service.anker.com/eu/article-description/Common-issues-and-troubleshooting-for-PowerCore-Common-Battery",
+    "last_verified": "2026-09-22"
+  },
+  {
+    "entry_id": "ANKER-OFFICIAL-003",
+    "category": "故障排除",
+    "product_category": "充电宝",
+    "product_models": ["PowerCore通用"],
+    "title": "充电宝异常充电或无反应时重置",
+    "content": "如果充电宝出现异常充电、指示灯异常、行为异常或设备无反应，可以尝试将充电线两端同时连接到充电宝的输入端和输出端，保持连接约3至5秒进行重置。重置后可以重新进行充电和放电测试。如果问题仍然存在，应联系官方支持。",
+    "keywords": [
+      "异常充电",
+      "指示灯异常",
+      "设备没反应",
+      "重置",
+      "死机",
+      "无反应"
+    ],
+    "risk_level": "medium",
+    "next_action": "按照对应型号支持的方式尝试重置",
+    "source_type": "official",
+    "source_url": "https://service.anker.com/eu/article-description/Common-issues-and-troubleshooting-for-PowerCore-Common-Battery",
+    "last_verified": "2026-09-22"
+  },
+  {
+    "entry_id": "ANKER-OFFICIAL-004",
+    "category": "故障排除",
+    "product_category": "充电宝",
+    "product_models": ["PowerCore通用"],
+    "title": "充电宝充电速度慢",
+    "content": "充电速度可能受到充电线、充电器、设备兼容性和快充协议的影响。官方建议尝试其他充电线和设备，并确认手机或其他设备支持的快充技术与充电宝相匹配。对于部分高功率型号，还需要使用符合要求的充电线和充电器。",
+    "keywords": [
+      "充电慢",
+      "充很久",
+      "充不满",
+      "快充",
+      "功率",
+      "兼容性"
+    ],
+    "risk_level": "low",
+    "next_action": "更换充电线和设备，并确认快充协议是否匹配",
+    "source_type": "official",
+    "source_url": "https://service.anker.com/eu/article-description/Common-issues-and-troubleshooting-for-PowerCore-Common-Battery",
+    "last_verified": "2026-09-22"
+  },
+  {
+    "entry_id": "ANKER-OFFICIAL-005",
+    "category": "故障排除",
+    "product_category": "充电宝",
+    "product_models": ["A1651", "733 Power Bank"],
+    "title": "Anker 733无法充电",
+    "content": "如果Anker 733无法通过墙插充电，可以尝试更换墙上插座。如果通过USB-C1接口无法充电，可以更换墙上插座、充电线和充电器。如果尝试的是USB-C2接口，需要注意该接口仅支持输出，不能用来给充电宝自身充电。如果充电宝无法给其他设备充电，可以尝试另一根正常充电线和其他设备。",
+    "keywords": [
+      "733",
+      "A1651",
+      "USB-C1",
+      "USB-C2",
+      "无法充电",
+      "输出"
+    ],
+    "risk_level": "medium",
+    "next_action": "根据接口功能选择正确端口，并更换充电器或充电线测试",
+    "source_type": "official",
+    "source_url": "https://service.anker.com/eu/article-description/What-should-I-do-if-the-733-Power-Bank-does-not-charge-at-all",
+    "last_verified": "2026-09-22"
+  },
+  {
+    "entry_id": "ANKER-OFFICIAL-006",
+    "category": "产品使用",
+    "product_category": "充电宝",
+    "product_models": ["A1388"],
+    "title": "Anker 10K 22.5W涓流充电模式",
+    "content": "Anker 10K 22.5W充电宝支持为耳机等低功耗设备充电的涓流充电模式。对于低功耗设备，如果普通输出没有反应，应根据产品说明书激活涓流充电模式，然后再连接耳机、音箱或智能手表等设备。",
+    "keywords": [
+      "A1388",
+      "10K",
+      "22.5W",
+      "耳机",
+      "低功耗",
+      "涓流充电"
+    ],
+    "risk_level": "low",
+    "next_action": "按照产品说明书激活涓流充电模式",
+    "source_type": "official",
+    "source_url": "https://service.anker.com/article-description/Anker-Power-Bank-10K-22-5W-User-Guide",
+    "last_verified": "2026-09-22"
+  },
+  {
+    "entry_id": "ANKER-OFFICIAL-007",
+    "category": "故障排除",
+    "product_category": "充电宝",
+    "product_models": ["A1652"],
+    "title": "Anker 521 Power Bank兼容性排查",
+    "content": "Anker 521 Power Bank在不同工作模式下的输出能力不同。如果连接的设备所需功率高于充电宝当前模式可以提供的功率，设备可能无法充电。排查时应确认目标设备的功率需求，使用合适的充电线，并尝试连接另一台兼容设备。如果仍然无法输出，应联系官方支持。",
+    "keywords": [
+      "A1652",
+      "521",
+      "兼容性",
+      "笔记本",
+      "输出功率",
+      "无法充电"
+    ],
+    "risk_level": "medium",
+    "next_action": "确认目标设备功率需求，并使用兼容设备和充电线测试",
+    "source_type": "official",
+    "source_url": "https://service.anker.com/uk/article-description/What-should-I-do-if-the-Anker-521-Power-Bank-PowerCore-2-in-1-5K-45W-does-not-charge-at-all",
+    "last_verified": "2026-09-22"
+  },
+  {
+    "entry_id": "ANKER-OFFICIAL-008",
+    "category": "安全风险",
+    "product_category": "充电宝",
+    "product_models": ["通用"],
+    "title": "A1647和A1652召回处理",
+    "content": "Anker官方召回公告说明，部分A1647和A1652充电宝可能存在电池相关风险。用户应根据产品底部的型号和序列号确认是否属于召回范围。如果可能受到影响，应立即停止使用，将设备放置在安全位置，不要放入普通垃圾或普通电池回收箱，并通过官方召回页面提交序列号和相关信息。",
+    "keywords": [
+      "A1647",
+      "A1652",
+      "召回",
+      "序列号",
+      "过热",
+      "冒烟",
+      "起火"
+    ],
+    "risk_level": "high",
+    "next_action": "立即停止使用并进行官方召回序列号查询",
+    "forbidden_actions": [
+      "继续使用",
+      "继续充电",
+      "丢入普通垃圾",
+      "丢入普通电池回收箱",
+      "自行拆解"
+    ],
+    "source_type": "official",
+    "source_url": "https://www.anker.com/eu-en/a1647-recall",
+    "last_verified": "2026-09-22"
+  },
+  {
+    "entry_id": "ANKER-OFFICIAL-009",
+    "category": "产品使用",
+    "product_category": "充电宝",
+    "product_models": ["Anker Prime 20K 220W"],
+    "title": "高功率充电宝充电功率不足",
+    "content": "Anker Prime 20K 220W在重新充电时，如果充电线或充电器无法满足产品所需功率，可能无法达到最大充电功率。官方建议使用支持相应功率的充电线，并在使用第三方充电器时确认其支持正确的PD协议。充电过程中出现一定发热可能属于正常现象，但应在凉爽、通风的环境中使用。",
+    "keywords": [
+      "Prime",
+      "20K",
+      "220W",
+      "充电功率不足",
+      "100W",
+      "PD",
+      "发热"
+    ],
+    "risk_level": "low",
+    "next_action": "确认充电线额定功率和充电器PD协议",
+    "source_type": "official",
+    "source_url": "https://service.anker.com/eu/article-description/Anker-Prime-Power-Bank-20K-220W-FAQ",
+    "last_verified": "2026-09-22"
+  },
+  {
+    "entry_id": "ANKER-OFFICIAL-010",
+    "category": "产品使用",
+    "product_category": "充电宝",
+    "product_models": ["Anker Prime 20K 220W"],
+    "title": "充电宝和手机充到约80%后暂停",
+    "content": "部分手机可能因为系统的电池保护或温度控制，在电量达到约80%时暂时停止充电。设备温度较高时，这种情况可能更加明显。可以将手机放置在较凉爽的环境中，并检查手机自身的电池优化和充电保护设置。该现象不一定表示充电宝故障。",
+    "keywords": [
+      "充到80%",
+      "充电停止",
+      "电池保护",
+      "温度控制",
+      "iPhone",
+      "充不满"
+    ],
+    "risk_level": "low",
+    "next_action": "检查手机电池保护设置并降低设备温度",
+    "source_type": "official",
+    "source_url": "https://service.anker.com/eu/article-description/Anker-Prime-Power-Bank-20K-220W-FAQ",
+    "last_verified": "2026-09-22"
+  },
+  {
+    "entry_id": "ANKER-OFFICIAL-011",
+    "category": "产品使用",
+    "product_category": "充电宝",
+    "product_models": ["Anker Prime 20K 220W"],
+    "title": "充电宝边充边放",
+    "content": "充电宝同时进行输入和输出时，可用于输出的功率会受到影响。对于高功率设备，如果输入充电器功率不足，可能无法满足设备的最低充电需求。官方建议使用更高功率的兼容充电器，或者暂停给充电宝重新充电，先单独给目标设备供电。",
+    "keywords": [
+      "边充边放",
+      "同时充电",
+      "输入输出",
+      "功率不足",
+      "笔记本"
+    ],
+    "risk_level": "low",
+    "next_action": "暂停边充边放，或使用符合要求的高功率充电器",
+    "source_type": "official",
+    "source_url": "https://service.anker.com/eu/article-description/Anker-Prime-Power-Bank-20K-220W-FAQ",
+    "last_verified": "2026-09-22"
+  },
+  {
+    "entry_id": "ANKER-OFFICIAL-012",
+    "category": "售后流程",
+    "product_category": "充电宝",
+    "product_models": ["通用"],
+    "title": "官方排查后仍未解决",
+    "content": "如果用户已经按照官方页面完成充电器、充电线、插座、设备兼容性和重置等排查，但问题仍未解决，应联系Anker官方支持。提交问题时应简要说明产品型号、故障现象以及已经尝试过的步骤，这有助于官方更快判断问题。",
+    "keywords": [
+      "还是不行",
+      "排查无效",
+      "仍然无法充电",
+      "联系售后",
+      "转人工"
+    ],
+    "risk_level": "medium",
+    "next_action": "整理型号、故障现象和已完成步骤后转人工",
+    "source_type": "official",
+    "source_url": "https://service.anker.com/eu/article-description/Common-issues-and-troubleshooting-for-PowerCore-Common-Battery",
+    "last_verified": "2026-09-22"
+  },
+  {
+    "entry_id": "ANKER-OFFICIAL-A1289-001",
+    "category": "故障排除",
+    "product_category": "充电宝",
+    "product_models": [
+      "A1289",
+      "Anker 737 Power Bank (PowerCore 24K)"
+    ],
+    "title": "A1289 Anker 737 Power Bank 无法重新充电",
+    "content": "A1289 对应 Anker 737 Power Bank (PowerCore 24K)。官方建议使用随附的 C-C 充电线连接兼容充电器进行重新充电。为获得较快的充电效果，应使用支持相应功率的原装或兼容充电器。用户应先确认充电线、充电器和插座均正常，再观察设备显示或指示灯状态。如果使用已知正常的充电器和充电线后仍无充电反应，应停止继续通电测试并联系 Anker 官方支持。",
+    "keywords": [
+      "A1289",
+      "Anker 737",
+      "PowerCore 24K",
+      "无法重新充电",
+      "指示灯不亮",
+      "不充电",
+      "C-C 充电线"
+    ],
+    "risk_level": "medium",
+    "next_action": "使用随附 C-C 线和兼容充电器交叉测试并观察指示灯",
+    "source_type": "official",
+    "source_url": "https://service.anker.com/article-description/Anker-737-recharging-inquiry-and-suitable-wall-charger-inquiry",
+    "last_verified": "2026-09-25"
+  }
+]

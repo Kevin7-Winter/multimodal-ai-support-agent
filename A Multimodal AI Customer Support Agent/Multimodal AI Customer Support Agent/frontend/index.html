@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Anker 智能售后客服工作台"
+    />
+    <title>AnchorLink | Anker 智能售后工作台</title>
+    <link rel="stylesheet" href="./styles.css?v=20260925-2" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <a class="brand" href="/app/" aria-label="AnchorLink 首页">
+          <span class="brand-mark" aria-hidden="true">
+            <i data-lucide="anchor"></i>
+            <span class="brand-link"></span>
+          </span>
+          <span class="brand-copy">
+            <strong>AnchorLink</strong>
+            <small>Anker 智能售后工作台</small>
+          </span>
+        </a>
+
+        <div class="topbar-status">
+          <div class="case-chip">
+            <span class="case-chip-label">当前工单</span>
+            <strong id="caseId">正在创建</strong>
+          </div>
+          <span id="statusPill" class="status-pill status-collecting">
+            信息收集
+          </span>
+          <span id="connectionState" class="connection">
+            <span class="connection-dot"></span>
+            连接中
+          </span>
+        </div>
+      </header>
+
+      <main class="workspace">
+        <section class="conversation-pane" aria-label="客服会话">
+          <header class="pane-header">
+            <div>
+              <span class="eyebrow">会话</span>
+              <h1>售后咨询</h1>
+            </div>
+            <button id="newCaseButton" class="quiet-button" type="button">
+              <i data-lucide="plus" aria-hidden="true"></i>
+              新建工单
+            </button>
+          </header>
+
+          <div id="riskBanner" class="risk-banner" hidden>
+            <span class="risk-banner-icon">
+              <i data-lucide="shield-alert" aria-hidden="true"></i>
+            </span>
+            <div>
+              <strong>检测到潜在安全风险</strong>
+              <p id="riskBannerText">请立即停止使用并联系人工售后。</p>
+            </div>
+          </div>
+
+          <div id="messageList" class="message-list" aria-live="polite"></div>
+
+          <div id="uploadStatus" class="upload-status" hidden>
+            <div class="upload-preview">
+              <img id="uploadPreview" alt="待分析图片预览" />
+            </div>
+            <div class="upload-copy">
+              <strong id="uploadTitle">正在处理图片</strong>
+              <span id="uploadDetail">请稍候，视觉模型正在读取图片。</span>
+            </div>
+            <span id="uploadSpinner" class="spinner" aria-hidden="true"></span>
+          </div>
+
+          <form id="chatForm" class="composer">
+            <div class="composer-tools">
+              <button
+                id="uploadButton"
+                class="icon-text-button"
+                type="button"
+                title="上传售后图片"
+              >
+                <i data-lucide="image-plus" aria-hidden="true"></i>
+                上传图片
+              </button>
+              <input
+                id="fileInput"
+                type="file"
+                accept="image/jpeg,image/png,image/webp"
+                hidden
+              />
+            </div>
+            <div class="composer-input">
+              <textarea
+                id="messageInput"
+                rows="1"
+                maxlength="4000"
+                placeholder="描述产品现象，例如：充电宝插上后指示灯不亮"
+                aria-label="输入售后问题"
+              ></textarea>
+              <button
+                id="sendButton"
+                class="send-button"
+                type="submit"
+                title="发送消息"
+              >
+                <i data-lucide="send-horizontal" aria-hidden="true"></i>
+                <span>发送</span>
+              </button>
+            </div>
+          </form>
+        </section>
+
+        <aside class="case-pane" aria-label="当前工单信息">
+          <header class="case-pane-header">
+            <div>
+              <span class="eyebrow">当前工单</span>
+              <h2 id="caseHeadline">正在建立工单</h2>
+            </div>
+            <button
+              id="handoffButton"
+              class="primary-button"
+              type="button"
+            >
+              <i data-lucide="headphones" aria-hidden="true"></i>
+              转人工
+            </button>
+          </header>
+
+          <section class="case-overview">
+            <div class="metric">
+              <span>产品类别</span>
+              <strong id="productCategory">充电宝</strong>
+            </div>
+            <div class="metric">
+              <span>产品型号</span>
+              <strong id="productModel">待确认</strong>
+            </div>
+            <div class="metric">
+              <span>用户情绪</span>
+              <strong id="emotionValue">未知</strong>
+            </div>
+            <div class="metric">
+              <span>风险等级</span>
+              <strong id="riskLevel">未发现</strong>
+            </div>
+          </section>
+
+          <div class="next-action">
+            <span>下一步动作</span>
+            <strong id="nextAction">请描述产品型号和具体现象</strong>
+          </div>
+
+          <nav class="case-tabs" aria-label="工单详情">
+            <button
+              class="case-tab is-active"
+              type="button"
+              data-tab="overview"
+            >
+              工单概况
+            </button>
+            <button class="case-tab" type="button" data-tab="evidence">
+              图片证据
+            </button>
+            <button class="case-tab" type="button" data-tab="sources">
+              资料与案例
+            </button>
+          </nav>
+
+          <div class="case-panel-body">
+            <section
+              id="panel-overview"
+              class="tab-panel is-active"
+              data-panel="overview"
+            >
+              <article class="detail-section">
+                <h3>问题与意图</h3>
+                <p id="intentText" class="empty-text">等待用户描述。</p>
+                <ul id="symptomList" class="plain-list"></ul>
+              </article>
+
+              <article class="detail-section">
+                <h3>已收集证据</h3>
+                <ul id="evidenceList" class="plain-list"></ul>
+              </article>
+
+              <article class="detail-section">
+                <h3>已完成步骤</h3>
+                <ul id="completedList" class="plain-list"></ul>
+              </article>
+
+              <article class="detail-section">
+                <h3>业务工具结果</h3>
+                <div id="toolResults" class="stack-list"></div>
+              </article>
+            </section>
+
+            <section
+              id="panel-evidence"
+              class="tab-panel"
+              data-panel="evidence"
+            >
+              <article class="detail-section">
+                <h3>图片证据</h3>
+                <div id="imageEvidence" class="image-list"></div>
+              </article>
+
+              <article class="detail-section">
+                <h3>风险与禁止操作</h3>
+                <ul id="riskList" class="plain-list risk-list"></ul>
+                <ul id="forbiddenList" class="plain-list forbidden-list"></ul>
+              </article>
+            </section>
+
+            <section
+              id="panel-sources"
+              class="tab-panel"
+              data-panel="sources"
+            >
+              <article class="detail-section">
+                <h3>官方资料</h3>
+                <div id="officialSources" class="stack-list"></div>
+              </article>
+
+              <article class="detail-section">
+                <h3>历史相似案例</h3>
+                <div id="historicalCases" class="stack-list"></div>
+              </article>
+            </section>
+          </div>
+        </aside>
+      </main>
+    </div>
+
+    <dialog id="handoffDialog" class="handoff-dialog">
+      <div class="dialog-header">
+        <div>
+          <span class="eyebrow">人工接管</span>
+          <h2>工单摘要</h2>
+        </div>
+        <button
+          id="closeDialogButton"
+          class="icon-button"
+          type="button"
+          title="关闭摘要"
+        >
+          <i data-lucide="x" aria-hidden="true"></i>
+        </button>
+      </div>
+      <pre id="handoffSummary"></pre>
+    </dialog>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+    <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+    <script src="./app.js?v=20260925-2"></script>
+  </body>
+</html>
