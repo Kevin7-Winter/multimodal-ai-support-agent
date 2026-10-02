@@ -85,7 +85,7 @@ multimodal-ai-customer-support-agent/
 ├── backend/
 │   ├── main.py
 │   ├── requirements.txt
-│   ├── .env.example
+│   ├── env.example
 │   ├── work_orders.json
 │   └── knowledge_base/
 │       └── powerbank_kb.json
@@ -124,7 +124,7 @@ pip install -r requirements.txt
 ### 3. Create the local environment file
 
 ```powershell
-Copy-Item .env.example .env
+Copy-Item env.example .env
 ```
 
 Configure the following values in `.env`:
@@ -187,7 +187,7 @@ The public repository should contain:
 - No user-uploaded images
 - No real customer, order, warranty, or dealer data
 
-Only `.env.example` should be committed as the environment-variable template.
+Only `env.example` should be committed as the environment-variable template.
 
 ## Optional Public Demo
 
@@ -215,3 +215,4 @@ The FastAPI process and tunnel process must remain active during the demonstrati
 ## Disclaimer
 
 This is an independent hackathon prototype created for demonstration and educational purposes. It is not affiliated with, endorsed by, or released as an official product of Anker Innovations.
+
